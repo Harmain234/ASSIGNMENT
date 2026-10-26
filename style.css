@@ -1,0 +1,354 @@
+.small-head{
+    font-style: italic;
+    color: burlywood;
+}
+.head{
+    font-style: oblique;
+}
+.story{
+    color: goldenrod;
+}
+.para{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn-1{
+    background-color: rgb(230, 158, 107);
+    color: black;
+    transition: all 2s ease;
+
+}
+.btn-2{
+    background-color: rgb(230, 158, 107);
+    color: black;
+        transition: all 2s ease;
+
+
+}
+.btn-1:hover{
+    color: rgb(230, 158, 107);
+    background-color: rgb(67, 39, 39);
+    transform: translateX(-10px);
+}
+.btn-2:hover{
+    color: rgb(230, 158, 107);
+    background-color: rgb(67, 39, 39);
+    transform: translateX(-10px);
+}
+
+ /* .card{
+    width: 16rem !important;
+    height: auto !important;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+ }
+   .card:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+   }
+   
+.card h3{
+    font-size: bolder;
+    font-style: oblique;
+    font-size: 20px;
+}
+.card p{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 5px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+padding-bottom: 20px;
+    gap: 50px;
+} */
+
+
+.card {
+    width: 16rem !important;
+    height: auto !important;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.card p {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 15px 20px;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .container {
+        gap: 20px;
+    }
+
+    .card {
+        width: 45% !important;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 320px;
+    }
+}
+
+
+
+.menu-head{
+
+    text-align: center;
+    font-size: 50px;
+    font-style: oblique;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.about-head{
+text-align: center;
+    font-size: 50px;
+    font-style: oblique;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.contact-head{
+     text-align: center;
+    font-size: 50px;
+    font-style: oblique;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+ .menu-section{
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.container a {
+  background: linear-gradient(135deg, #6F4328, #B8864B);
+  color: #fff8ed;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transition: all 0.4s ease;
+}
+.container a:hover{
+background: linear-gradient(135deg, #3B2418, #8C6239);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(59, 36, 24, 0.3);
+  transform: translateY(-10px);
+}
+
+/* Contact Section */
+.contact-section {
+  background: linear-gradient(135deg, #2B1A12, #4B2E20);
+  padding: 80px 8%;
+  color: #FFF8ED;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+/* Left Side */
+.contact-label {
+  color: #D6B98C;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.contact-info h2 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 18px 0;
+}
+
+.contact-info h2 span {
+  color: #D6B98C;
+}
+
+.contact-desc {
+  color: #E0D0C1;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 22px 0;
+}
+
+.info-icon {
+  min-width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #6F4328, #B8864B);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.info-item h4 {
+  margin: 0 0 6px;
+  color: #E2C18B;
+}
+
+.info-item p {
+  margin: 0;
+  color: #E0D0C1;
+  font-size: 14px;
+}
+
+/* Right Side Form */
+.contact-form {
+  background: #FFF8ED;
+  color: #3B2418;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h3 {
+  font-size: 27px;
+  margin: 0 0 8px;
+}
+
+.form-desc {
+  color: #806A5A;
+  margin-bottom: 25px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #DCC9B2;
+  border-radius: 8px;
+  background: #FFFFFF;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #B8864B;
+  box-shadow: 0 0 0 3px rgba(184, 134, 75, 0.15);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6F4328, #B8864B);
+  color: #FFF8ED;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: linear-gradient(135deg, #3B2418, #8C6239);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(59, 36, 24, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 50px 6%;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .contact-info h2 {
+    font-size: 32px;
+  }
+
+  .contact-form {
+    padding: 25px 20px;
+  }
+}
+/* Tablet */
+@media (max-width: 992px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
